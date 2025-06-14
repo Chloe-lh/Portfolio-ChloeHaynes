@@ -14,11 +14,13 @@
   gap: 20px;                   /* vertical spacing between children */
   
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
   border-radius: 30px;
-  background: #c3fffba0;
+  background: #c3fffbc5;
 }
-.btn {
+.hint{
+    color: rgba(0, 0, 0, 0.4); /* or just a normal color */
+}
+/* .btn {
   padding: 10px 20px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -29,4 +31,4 @@
   background-color: #f8a41f;
   color: white;
   transition: background-color 0.3s ease, transform 0.2s ease;
-}
+} */
