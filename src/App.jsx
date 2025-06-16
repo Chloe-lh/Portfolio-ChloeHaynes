@@ -3,6 +3,7 @@ import { Banner } from './components/Banner/index.jsx';
 import TriadicSketch from './components/TriadicSketch';
 import Navbar from './components/navbar/index.jsx'; // Corrected import path
 import Projects from './components/Projects/index.jsx';
+import Skills from './components/Skills/index.jsx';
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,9 @@ function App() {
       <Navbar /> 
       <div className="banner-container">
       <Banner />
+      </div>
+      <div className="skills-container">
+      <Skills />
       </div>
       <div className="projects-container">
         <h2>Projects</h2>

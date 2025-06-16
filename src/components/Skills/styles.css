@@ -1,0 +1,18 @@
+.skill{
+    padding: 0 0 10px;
+    position: relative;
+
+}
+.skills-bx{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -60px;
+    
+}
+.skills-bx h5{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
