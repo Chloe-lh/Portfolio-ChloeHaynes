@@ -22,7 +22,7 @@ const TriadicSketch = () => {
       };
 
       p.draw = () => {
-        p.background(0, 100, 100, 50); // white-ish trail fade, adjust alpha for persistence
+        p.background(0, 0, 100, 50); // white-ish trail fade, adjust alpha for persistence
         for (let c of circles) {
           // Smoothly move toward a new random target
           if (!c.tx || p.frameCount % 60 === 0) { // every ~1 second
