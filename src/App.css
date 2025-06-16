@@ -38,9 +38,9 @@
   width: 100%; /* Ensure it takes full width */
   padding: 20px; /* Add some padding around the skills */
   z-index: 2; /* Ensure skills are above the sketch and banner */
-  background-color: rgb(131, 35, 241);
+  background-color: rgb(79, 62, 140);
   color: white;
-  border: 10px solid rgb(242, 53, 148); /* Optional: Add a border for better visibility */
+   /* Optional: Add a border for better visibility */
 }
 /* If you want the navbar to be on top of the sketch as well */
 .App > .nav { /* Assuming Navbar component renders a <nav> with class "nav" */
