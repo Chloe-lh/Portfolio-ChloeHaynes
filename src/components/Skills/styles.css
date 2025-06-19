@@ -8,14 +8,13 @@
     padding: 20px;
     border-radius: 50px;
     margin-top: -60px;
-    background-color: rgb(79, 62, 140); 
+    background-color: #03a3f4; 
 }
 .skill-item{
      text-align: center;
   padding: 10px;
   max-width: 100px;     /* control overall width */
   margin: 0 auto;
-
 }
 .skills-bx h5{
     font-size: 0.75rem;

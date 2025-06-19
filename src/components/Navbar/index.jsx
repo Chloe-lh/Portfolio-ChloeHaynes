@@ -1,19 +1,18 @@
 import "./styles.css";
-
+import {Link} from "react-router-dom"
 export default function Navbar(){
     return <nav className="nav">
-        <a href="/" className="nav-title">C / H</a>
+        <Link to="/" className="nav-title">C / H</Link>
         <ul>
             <li>
-                <a href="/about" className="nav-link">about</a>
+                <Link to="/" className="nav-link">Home</Link>
             </li>
             <li>
-                <a href="/Projects" className="nav-link">Projects</a>
+                <Link to="/Projects" className="nav-link">Projects</Link>
             </li>
             <li>
-                <a href="/contact" className="nav-link">contact me</a>
+                <Link to ="/contact" className="nav-link">contact me</Link>
             </li>
-
         </ul>
     </nav>;
 

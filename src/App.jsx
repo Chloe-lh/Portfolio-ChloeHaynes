@@ -1,29 +1,25 @@
-import './App.css'
-import { Banner } from './components/Banner/index.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
 import TriadicSketch from './components/TriadicSketch';
-import Navbar from './components/navbar/index.jsx'; // Corrected import path
-import Projects from './components/Projects/index.jsx';
-import Skills from './components/Skills/index.jsx';
+import Navbar from './components/navbar/index.jsx';
+import Home from './pages/Home/Home.jsx';
+import Contact from './pages/Contact/contact.jsx'; // Import the Contact page
+
 function App() {
   return (
-    <div className="App">
-      <div className="triadic-sketch-background">
-        <TriadicSketch />
+    <BrowserRouter>
+      <div className="App">
+        <div className="triadic-sketch-background">
+          <TriadicSketch />
+        </div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-      <Navbar /> 
-      <div className="banner-container">
-      <Banner />
-      </div>
-      <div className="skills-container">
-      <Skills />
-      </div>
-      <div className="projects-container">
-        <h2>Projects</h2>
-        <p>Here are some of my projects. Click on the links to view the demos.</p>
-        <Projects />
-      </div>
-    </div>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
