@@ -5,7 +5,7 @@
 
 .banner-container {
   color: white;
-  text-decoration: solid;
+  text-decoration: solid; 
   display: flex;
   justify-content: center; /* Horizontally center the content (Banner) */
   width: 100%; /* Ensure the container takes full width to center its child */
@@ -13,10 +13,11 @@
   z-index: 2; /* Ensure it's above the sketch if positioned absolutely */
   /* Add top margin or padding if needed to position it vertically */
   /* margin-top: 100px; */ 
+  font-family: inherit;
 }
 
 .triadic-sketch-background {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -30,7 +31,7 @@
   width: 100%; /* Ensure it takes full width */
   padding: 20px; /* Add some padding around the projects */
   z-index: 2; /* Ensure projects are above the sketch and banner */
-  background-color: #087fa0;
+  background-color: #480a93;
   color: white;
 }
 .skills-container{
@@ -40,7 +41,7 @@
   width: 100%; /* Ensure it takes full width */
   padding: 20px; /* Add some padding around the skills */
   z-index: 2; /* Ensure skills are above the sketch and banner */
-  background-color: #05a6d2a4;
+  background-color: #6246b9;
   color: white;
    /* Optional: Add a border for better visibility */
 }

@@ -12,7 +12,7 @@ export const Skills = () => {
         },
         desktop: {
             breakpoint: { max: 4000, min: 1024 },
-            items: 5
+            items: 6
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -23,46 +23,64 @@ export const Skills = () => {
             items: 1
         }
     };
+    const CustomRightArrow = ({ onClick }) => {
+    console.log("Rendering right arrow");
+    return (
+        <button className="custom-arrow right-arrow" onClick={onClick}>
+        ›
+        </button>
+    );
+    };
+    const CustomLeftArrow = ({ onClick }) => {
+        console.log("Rendering left arrow");
+        return (
+            <button className="custom-arrow left-arrow" onClick={onClick}>
+            ‹
+            </button>
+        );
+    };
     return(
         <section className="skills">
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col>
                     <div className="skills-bx">
                         <h2>Skills</h2>
-                        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5" transitionDuration={500}>
-                            <div className="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-                                <h5>JavaScript</h5>
-                            </div>
-                            <div className="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-                                <h5>Python</h5>
-                            </div>
-                            <div className="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-                                <h5>React</h5>
-                            </div>
-                            <div className="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-                                <h5>Java</h5>
-                            </div>
-                            <div className="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" />
-                                <h5>AndroidStudio</h5>
-                            </div>
-                            <div>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
-                                <h5>Firebase</h5>
-                            </div>
-                            <div className="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" />
-                                <h5>SQLite</h5>
-                            </div>
-                            <div className="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-                                <h5>Git</h5>
-                            </div>
+                        <Carousel responsive={responsive} infinite={true} autoPlay={true} 
+                        autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .25" 
+                        transitionDuration={500} customRightArrow={<CustomRightArrow />} customLeftArrow={<CustomLeftArrow />}>
+                        <div className="skill-item">
+                            <i className="devicon-javascript-plain skill-icon"></i>
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div className="skill-item">
+                            <i className="devicon-python-plain skill-icon"></i>
+                            <h5>Python</h5>
+                        </div>
+                        <div className="skill-item">
+                            <i className="devicon-react-original skill-icon"></i>
+                            <h5>React</h5>
+                        </div>
+                        <div className="skill-item">
+                            <i className="devicon-java-plain skill-icon"></i>
+                            <h5>Java</h5>
+                        </div>
+                        <div className="skill-item">
+                            <i className="devicon-android-plain skill-icon"></i>
+                            <h5>Android</h5>
+                        </div>
+                        <div className="skill-item">
+                            <i className="devicon-firebase-plain skill-icon"></i>
+                            <h5>Firebase</h5>
+                        </div>
+                        <div className="skill-item">
+                            <i className="devicon-sqlite-plain skill-icon"></i>
+                            <h5>SQLite</h5>
+                        </div>
+                        <div className="skill-item">
+                            <i className="devicon-git-plain skill-icon"></i>
+                            <h5>Git</h5>
+                        </div>
                         </Carousel>
                     </div>
                     </Col>

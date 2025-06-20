@@ -7,12 +7,16 @@ export default function Contact() {
         email: "",
         message: "",
     });
-    emailjs.init("")
-    const handleChange = (e) =>{
-        setForm({name:"", email:"", message:""});
-    }
-    const handleSubmit = (e) =>{
-        e.preventDefailt();
+    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setForm((prevForm) => ({
+            ...prevForm,
+            [name]: value,
+        }));
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault();
         emailjs.send(
             "service_yis4ztb",
             "template_mw76eec",
@@ -32,32 +36,31 @@ export default function Contact() {
         )
     }
 
-    return(
+    return (
         <section className="contact-container">
             <h1>Lets Chat!</h1>
-            <form>
-                <input className="nameInput" 
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={form.name}
-                onChange={handleChange}
-                required/>
+            <form onSubmit={handleSubmit}>
+                <input className="nameInput"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    value={form.name}
+                    onChange={handleChange}
+                    required />
                 <input className="emailInput"
-                type="text"
-                name="email"
-                placeholder="Your Email"
-                value={form.email}
-                onChange={handleChange}
-                required/>
-                <input className="messageInput"
-                type="text"
-                name="message"
-                placeholder="message"
-                value={form.message}
-                onChange={handleChange}
-                required/>
-                
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    value={form.email}
+                    onChange={handleChange}
+                    required />
+                <textarea className="messageInput"
+                    name="message"
+                    placeholder="Your Message"
+                    value={form.message}
+                    onChange={handleChange}
+                    required />
+                <button type="submit">Send Message</button>
             </form>
         </section>
     )

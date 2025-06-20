@@ -1,15 +1,68 @@
 .contact-container {
-  position: relative; /* Establishes a stacking context */
-  z-index: 2; /* Ensures it sits above the background (z-index: 1) and below the navbar (z-index: 1000) */
-  padding-top: 80px; /* Adds space to prevent content from being hidden behind the fixed navbar */
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white; /* Make text visible against the dark background from App.css */
+  position: relative;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f3f4f665;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 2;
+  font-family: inherit
+}
+
+.contact-container h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact-container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1.25rem;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #0f0cbb4c;
+  background-color: #5d7dae15;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.nameInput,
+.emailInput,
+.messageInput {
   width: 100%;
 }
-.form{
-    
+
+.contact-container button {
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #814ac4;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
+
+.contact-container button:hover {
+  background-color: #0056b3;
+}
+

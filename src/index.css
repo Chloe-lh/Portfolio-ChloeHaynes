@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Calibri';
   text-decoration: none;
+}
+
+:root {
+  font-family: 'Calibri', 'Trebuchet MS';
+  line-height: 1.5;
 }

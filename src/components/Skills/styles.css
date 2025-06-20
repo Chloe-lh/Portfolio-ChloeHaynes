@@ -1,29 +1,53 @@
 .skill{
 
     position: relative;
-
 }
 .skills-bx{
+    position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 20px 50px; /* Increased horizontal padding */
     border-radius: 50px;
     margin-top: -60px;
-    background-color: #03a3f4; 
+    background-color: #6246b9; 
 }
 .skill-item{
-     text-align: center;
-  padding: 10px;
-  max-width: 100px;     /* control overall width */
-  margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    max-width: 112px;     /* control overall width */
+    margin: 0 auto;
+    background-color: rgb(162, 228, 232);
 }
 .skills-bx h5{
     font-size: 0.75rem;
-    color: white;
-    
+    color: rgb(61,149,97);
     font-weight: 600;
 }
-.skills img{
-    object-fit: contain;
-    width: 50px;
-    height: 50px;
+.skill-icon{
+    font-size: 5rem; /* Adjust this value to your liking */
+    color: rgb(61,149,97);
+    background-color: rgb(162, 228, 232);
+}
+.custom-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  rgb(61,149,97);;
+  color: rgb(162, 228, 232);
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left-arrow{
+    left:5px;
+}
+.right-arrow{
+    right:5px;
 }
