@@ -7,7 +7,7 @@ import Contact from './pages/Contact/contact.jsx'; // Import the Contact page
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio-ChloeHaynes/">
       <div className="App">
         <div className="triadic-sketch-background">
           <TriadicSketch />
