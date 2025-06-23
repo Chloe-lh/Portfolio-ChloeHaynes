@@ -52,7 +52,7 @@ const TriadicSketch = () => {
       }
 
       p.keyPressed = () => {
-        if(p.key === ' '){
+        if(p.key === 'n'){
           for (let c of circles) {
             c.h = (c.h + 50) % 360;
           }

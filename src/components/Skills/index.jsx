@@ -12,11 +12,11 @@ export const Skills = () => {
         },
         desktop: {
             breakpoint: { max: 4000, min: 1024 },
-            items: 6
+            items: 5
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 4
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -49,37 +49,37 @@ export const Skills = () => {
                         <Carousel responsive={responsive} infinite={true} autoPlay={true} 
                         autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .25" 
                         transitionDuration={500} customRightArrow={<CustomRightArrow />} customLeftArrow={<CustomLeftArrow />}>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-javascript-plain skill-icon"></i>
-                            <h5>JavaScript</h5>
+                            <h4>JavaScript</h4>
                         </div>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-python-plain skill-icon"></i>
-                            <h5>Python</h5>
+                            <h4>Python</h4>
                         </div>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-react-original skill-icon"></i>
-                            <h5>React</h5>
+                            <h4>React</h4>
                         </div>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-java-plain skill-icon"></i>
-                            <h5>Java</h5>
+                            <h4>Java</h4>
                         </div>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-android-plain skill-icon"></i>
-                            <h5>Android</h5>
+                            <h4>Android</h4>
                         </div>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-firebase-plain skill-icon"></i>
-                            <h5>Firebase</h5>
+                            <h4>Firebase</h4>
                         </div>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-sqlite-plain skill-icon"></i>
-                            <h5>SQLite</h5>
+                            <h4>SQLite</h4>
                         </div>
-                        <div className="skill-item">
+                        <div className="skill-card">
                             <i className="devicon-git-plain skill-icon"></i>
-                            <h5>Git</h5>
+                            <h4>Git</h4>
                         </div>
                         </Carousel>
                     </div>

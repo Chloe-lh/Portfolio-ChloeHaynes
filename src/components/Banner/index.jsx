@@ -9,7 +9,7 @@ export const Banner = () => {
                     I am currently seeking internship opportunities where I can contribute, learn,
                     and grow as a developer.</p>
                 <p>Check out my projects below!</p>
-                 <p className="hint">psst.. press space bar to change colors</p>
+                 <p className="hint">psst.. press n to change colors</p>
                 {/* <a href="/Projects" className="btn">View Projects</a> */}
             </div>
         </section>

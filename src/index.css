@@ -4,11 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Calibri';
+  font-family: 'Century Gothic';
   text-decoration: none;
 }
 
 :root {
-  font-family: 'Calibri', 'Trebuchet MS';
+  font-family: 'Century Gothic', 'Trebuchet MS';
   line-height: 1.5;
 }

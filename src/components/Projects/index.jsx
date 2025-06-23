@@ -6,7 +6,7 @@ export default function Projects(){
             "title": "Planetary Music Visualizer",
             "description": "interactive generative art project using p5.js to simulate dynamic celestial motion. Particles evolve into planets or asteroids, expanding and moving outward in space with glowing effects. The project explores procedural generation, algorithmic motion, and creative coding for a visually immersive experience.",
             "skills": ["p5js"],
-            "demo": "https://example.com/project1",
+            "demo": "https://openprocessing.org/sketch/2235668",
             "background": "rgb(164, 166, 255)"
         },
         project2: {
@@ -23,6 +23,14 @@ export default function Projects(){
             "demo": "https://example.com/project2",
             "background": "rgb(236, 253, 87)"
         },
+        project4:{
+            "title":"Digital Divide Website",
+            "description": "Informative website to provide resources on the Digital Divide in Canada and educate on socio-economic gaps in digital literacy",
+            "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+            "demo": "https://chloe-lh.github.io/DigitalDivide/",
+            "background": "rgb(104, 248, 114)"
+        },
+
     }
     return(
         <section className="projects">
