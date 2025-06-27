@@ -15,7 +15,8 @@
     padding: 10px;
     max-width: 112px;     /* control overall width */
     margin: 0 auto;
-    background-color: rgb(162, 228, 232);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
 }
 .skills-bx h4{
     font-size: 0.8rem;
@@ -26,14 +27,14 @@
 .skill-icon{
     font-size: 5rem; /* Adjust this value to your liking */
     color: rgb(61,149,97);
-    background-color: rgb(162, 228, 232);
+    background-color: rgb(255, 255, 255);
 }
 .custom-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color:  rgb(61,149,97);;
-  color: rgb(162, 228, 232);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 50%;
   font-size: 30px;

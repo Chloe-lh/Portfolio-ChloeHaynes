@@ -44,5 +44,13 @@
     background-color:rgb(245, 126, 15);
     border: 2px solid rgb(242, 53, 148);
 }
+.project-card a{
+    text-decoration: none;
+    border: 3px solid rgba(9, 2, 2, 0.1);
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
 
 

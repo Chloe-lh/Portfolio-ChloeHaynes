@@ -3,7 +3,7 @@ import { Banner } from '../../components/Banner/index.jsx';
 import Projects from '../../components/Projects/index.jsx';
 import Skills from '../../components/Skills/index.jsx';
 
-export default function Home() {
+export default function Home({ projectRef }) {
   return (
     <>
       <div className="banner-container">
@@ -12,11 +12,11 @@ export default function Home() {
       <div className="skills-container">
         <Skills />
       </div>
-      <div className="projects-container">
+      <section className="projects-container" ref={projectRef}>
         <h2>Projects</h2>
         <p>Here are some of my projects. Click on the links to view the demos.</p>
         <Projects />
-      </div>
+      </section>
     </>
   )
 }

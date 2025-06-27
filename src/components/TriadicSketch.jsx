@@ -12,17 +12,17 @@ const TriadicSketch = () => {
       p.setup = () => {
         p.createCanvas(p.windowWidth, p.windowHeight);
         p.colorMode(p.HSB, 360, 100, 100, 300);
+        p.background(240, 80, 50);
         p.noStroke();
-
         for (let i = 0; i < 40; i++) {
-          circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(10, 500), h: 41, s: 100, b: 100 });
-          circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(200, 500), h: 290, s: 100, b: 100 });
-          circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(200, 500), h: 168, s: 100, b: 100 });
+          circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(10, 500), h: 41, s: 100, b: 80 });
+          circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(200, 500), h: 290, s: 100, b: 80 });
+          circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(200, 500), h: 168, s: 100, b: 80 });
         }
       };
 
       p.draw = () => {
-        p.background(0, 0, 100, 50); // white-ish trail fade, adjust alpha for persistence
+        p.background(360, 0, 10, 50); // white-ish trail fade, adjust alpha for persistence
         for (let c of circles) {
           // Smoothly move toward a new random target
           if (!c.tx || p.frameCount % 60 === 0) { // every ~1 second

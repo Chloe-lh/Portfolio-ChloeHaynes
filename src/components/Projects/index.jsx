@@ -13,14 +13,14 @@ export default function Projects(){
             "title": "Mood Tracking App",
             "description": "Developed a mood tracking app in Android Studio as part of a team, featuring offline functionality with Firebase synchronization. Implemented user profiles with searchable follow systems and privacy controls. Integrated a map view to display location-based mood events, filterable by emotional states and user details. Utilized Java, object-oriented programming, and Google Firebase, while following Agile and SCRUM methodologies with GitHub for version control. Ensured reliability through consistent JUnit, Mockito, UI, and integration testing.",
             "skills": ["AndroidStudio", "Java", "Google Firebase"],
-            "demo": "https://example.com/project2",
+            "demo": false,
             "background": "rgb(211, 255, 164)"
         },
         project3: {
             "title": "Tweety",
             "description": "Built a command-line application in Python using SQLite to manage enterprise tweet data. The system supported user authentication, tweet searches, replies, retweets, and favorites. Designed secure and optimized SQL queries with pagination and string matching. Collaborated in a team of four using GitHub for version control and project coordination.",
             "skills": ["SQL", "Python"],
-            "demo": "https://example.com/project2",
+            "demo": false,
             "background": "rgb(236, 253, 87)"
         },
         project4:{
@@ -45,7 +45,9 @@ export default function Projects(){
                         <p className="skill"><strong>Skills:</strong>{" "}{project.skills.map((skill, index)=>(
                             <span key={index} className="skill-item">{skill}</span>
                         ))}</p>
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">View Demo</a>
+                        {project.demo!== false && (
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer">View Demo</a>
+                        )}
                 </div>
             ))}
         </section>
