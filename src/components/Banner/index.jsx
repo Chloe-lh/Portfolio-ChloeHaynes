@@ -12,6 +12,16 @@ export const Banner = () => {
                  <p className="hint">psst.. press n to change colors</p>
                 {/* <a href="/Projects" className="btn">View Projects</a> */}
             </div>
+            <div className="links">
+                <div className="link">
+                    <img src="src\assets\search-alt-1-svgrepo-com.svg"></img>
+                    <a href="https://www.linkedin.com/in/chloe-hayness/">linkedin.com/in/chloe-hayness/</a>
+                </div>
+                <div className="link">
+                    <img src="src\assets\search-alt-1-svgrepo-com.svg"></img>
+                    <a href="https://github.com/Chloe-lh">github.com/Chloe-lh</a>
+                </div>
+            </div>
         </section>
 
         

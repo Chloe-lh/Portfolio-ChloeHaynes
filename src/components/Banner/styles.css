@@ -11,31 +11,38 @@
   
   text-align: center;
   border-radius: 30px;
-  
 }
-
 .banner-content {
-
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the text elements if they have varying widths */
   gap: 15px; /* This will create space between h1, p, etc. inside .banner-content */
 }
 .banner-content h3{
   font-weight: bold;
 }
 .hint{
-    color: rgba(0, 0, 0, 0.4); /* or just a normal color */
+  color: rgba(0, 0, 0, 0.4); /* or just a normal color */
 }
-/* .btn {
-  padding: 10px 20px;
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.link{
+  background-color: #FF5E61;
+  color:white;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  width: 300px;
+  align-items: start;
+}
+div a{
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-  border-radius: 25px;
-  background-color: #f8a41f;
-  color: white;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-} */
+  color: inherit;
+}
+img{
+  width: 20px;
+  height: 20px;
+}

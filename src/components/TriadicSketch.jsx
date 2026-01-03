@@ -14,7 +14,7 @@ const TriadicSketch = () => {
         p.colorMode(p.HSB, 360, 100, 100, 300);
         p.background(240, 80, 50);
         p.noStroke();
-        for (let i = 0; i < 40; i++) {
+        for (let i = 0; i < 20; i++) {
           circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(10, 500), h: 41, s: 100, b: 80 });
           circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(200, 500), h: 290, s: 100, b: 80 });
           circles.push({ x: p.random(-200, p.width), y: p.random(-200, p.height), d: p.random(200, 500), h: 168, s: 100, b: 80 });

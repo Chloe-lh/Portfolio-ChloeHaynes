@@ -31,7 +31,7 @@
   width: 100%; /* Ensure it takes full width */
   padding: 20px; /* Add some padding around the projects */
   z-index: 2; /* Ensure projects are above the sketch and banner */
-  background-color: #480a93;
+  background-color: #000000;
   color: white;
 }
 .skills-container{

@@ -6,7 +6,6 @@ import "./styles.css";
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 6
         },
@@ -52,7 +51,7 @@ export const Skills = () => {
                         <div className="skill-card">
                             <i className="devicon-javascript-plain skill-icon"></i>
                             <h4>JavaScript</h4>
-                        </div>
+                        </div>12
                         <div className="skill-card">
                             <i className="devicon-python-plain skill-icon"></i>
                             <h4>Python</h4>
@@ -80,6 +79,18 @@ export const Skills = () => {
                         <div className="skill-card">
                             <i className="devicon-git-plain skill-icon"></i>
                             <h4>Git</h4>
+                        </div>
+                        <div className="skill-card">
+                            <i className="devicon-c-plain skill-icon"></i>
+                            <h4>C</h4>
+                        </div>
+                        <div className="skill-card">
+                            <i className="devicon-r-plain skill-icon"></i>
+                            <h4>RStudio</h4>
+                        </div>
+                        <div className="skill-card">
+                            <i className="devicon-mongodb-plain skill-icon"></i>
+                            <h4>MongoDB</h4>
                         </div>
                         </Carousel>
                     </div>

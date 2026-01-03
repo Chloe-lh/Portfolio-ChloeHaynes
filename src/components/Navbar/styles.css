@@ -6,7 +6,7 @@
     
     width: 100%; 
     height: 50px;
-    background-color: #480a93;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     align-items: center;
     padding: 0 40px; /* Increased horizontal padding */
@@ -62,7 +62,7 @@
     background-color: transparent;
 }
 
-li, a, .nav ul button {
+.nav li, .nav a, .nav ul button {
     font-weight: 600;
     cursor: pointer;
 }
