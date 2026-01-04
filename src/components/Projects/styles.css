@@ -37,6 +37,7 @@
     line-height: 1.5; /* Improved readability */
 }
 .skill-item{
+    font-family: 'Kanit', sans-serif;
     border-radius: 25px;
     padding: 5px 5px;
     margin: 5px ;

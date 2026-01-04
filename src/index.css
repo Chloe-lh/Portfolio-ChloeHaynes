@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Averia+Serif+Libre:wght@300;400;700&family=Chivo:wght@300;400;700&family=Kanit:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Lacquer&display=swap');
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Century Gothic';
+  font-family: 'Lacquer', 'Averia Serif Libre','Chivo';
   text-decoration: none;
 }
 
 :root {
-  font-family: 'Century Gothic', 'Trebuchet MS';
+  font-family: 'Lacquer', 'Averia Serif Libre','Chivo';
   line-height: 1.5;
 }
+
+h1{
+  font-family: 'Lacquer', sans-serif;
+}
+h2{
+  font-family: 'Kay Pho Du', serif;
+}
+p, a{
+  font-family: 'Chivo', sans-serif
+}
+

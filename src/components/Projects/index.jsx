@@ -10,7 +10,7 @@ export default function Projects(){
             "background": "rgb(164, 166, 255)"
         },
         project2: {
-            "title": "Mood Tracking App",
+            "title": "Bao Book - Mood Tracking App",
             "description": "Developed a mood tracking app in Android Studio as part of a team, featuring offline functionality with Firebase synchronization. Implemented user profiles with searchable follow systems and privacy controls. Integrated a map view to display location-based mood events, filterable by emotional states and user details. Utilized Java, object-oriented programming, and Google Firebase, while following Agile and SCRUM methodologies with GitHub for version control. Ensured reliability through consistent JUnit, Mockito, UI, and integration testing.",
             "tools": ["AndroidStudio", "Java", "Google Firebase"],
             "demo": false,
@@ -60,10 +60,10 @@ export default function Projects(){
                     key={key}
                     style={{background: project.background || "#eee" }}
                 >
-                        <h3>{project.title}</h3>
+                        <h2>{project.title}</h2>
                         <p className="description">{project.description}</p>
                         {(project.skills || project.tools) && (
-                            <p className="skill"><strong>Skills:</strong>{" "}{(project.skills || project.tools).map((skill, index)=>(
+                            <p className="skill" style={{fontWeight: 'bold'}}>Tools{" "}{(project.skills || project.tools).map((skill, index)=>(
                                 <span key={index} className="skill-item">{skill}</span>
                             ))}</p>
                         )}

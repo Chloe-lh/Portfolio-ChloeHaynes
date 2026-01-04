@@ -45,6 +45,15 @@
   color: white;
    /* Optional: Add a border for better visibility */
 }
+#contact-container{
+  z-index:3;
+  position: relative;
+  width: 30%;
+  background-color: white;
+  border-radius: 25px;
+  padding:10px;
+  margin: 25px;
+}
 /* If you want the navbar to be on top of the sketch as well */
 .App > .nav { /* Assuming Navbar component renders a <nav> with class "nav" */
   position: relative;
