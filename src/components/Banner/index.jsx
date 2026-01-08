@@ -1,6 +1,7 @@
 import "./styles.css";
+
 export const Banner = () => {
-    return(
+    return (
         <section className="banner">
             <div className="banner-content">
                 <h1>Hello! I'm Chloe Haynes</h1>
@@ -8,22 +9,11 @@ export const Banner = () => {
                     I love software dev, data science, and anything creative. 
                     I am currently seeking internship opportunities where I can contribute, learn,
                     and grow as a developer.</p>
-                <h2>Check out my projects below!</h2>
+                {/* <h2>Check out my projects below!</h2> */}
                 <p className="hint">psst.. press n to change colors</p>
+                <h2>This part is under construction.. but check out my projects below!</h2>
                 {/* <a href="/Projects" className="btn">View Projects</a> */}
             </div>
-            <div className="links">
-                <div className="link">
-                    <img src="src\assets\search-alt-1-svgrepo-com.svg"></img>
-                    <a href="https://www.linkedin.com/in/chloe-hayness/">linkedin.com/in/chloe-hayness/</a>
-                </div>
-                <div className="link">
-                    <img src="src\assets\search-alt-1-svgrepo-com.svg"></img>
-                    <a href="https://github.com/Chloe-lh">github.com/Chloe-lh</a>
-                </div>
-            </div>
         </section>
-
-        
-    )
-}
+    );
+};

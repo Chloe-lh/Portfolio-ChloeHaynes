@@ -1,7 +1,7 @@
 import './styles.css'
 import { Banner } from '../../components/Banner/index.jsx';
 import Projects from '../../components/Projects/index.jsx';
-import { ContactBox } from '../../components/ContactBox/index.jsx';
+import { InfoSection } from '../../components/InfoSection/index.jsx';
 import Skills from '../../components/Skills/index.jsx';
 
 export default function Home({ projectRef }) {
@@ -16,8 +16,8 @@ export default function Home({ projectRef }) {
       {/* <div className="links-container">
         <Links/>
       </div> */}
-      <div id="contact-container"> 
-        <ContactBox/>
+      <div id="info-container"> 
+        <InfoSection/>
       </div>
       <section className="projects-container" ref={projectRef}>
         <h1>Projects</h1>

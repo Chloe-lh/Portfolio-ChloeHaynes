@@ -1,0 +1,57 @@
+#info {
+  display: grid;
+  grid-template-columns: 1fr auto; /* contact, education */
+  gap: 32px;
+  width: fit-content;
+}
+
+/* Contact wrapper */
+#info > div {
+  background: white;
+  border-radius: 25px;
+}
+
+/* Education */
+#education {
+  display: grid;
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  width: fit-content;
+}
+
+#education img {
+  width: 100%;
+  height: auto;
+  max-width: 680px;
+}
+
+@media (max-width: 900px) {
+  #info {
+    grid-template-columns: 1fr; /* stack on narrow screens */
+  }
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.link{
+  background-color: #FF5E61;
+  color:white;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  width: 300px;
+  align-items: start;
+}
+div a{
+  text-decoration: none;
+  color: inherit;
+}
+img{
+  width: 20px;
+  height: 20px;
+}
