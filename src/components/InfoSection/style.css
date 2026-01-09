@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr auto; /* contact, education */
   gap: 32px;
-  width: fit-content;
+  width: auto;
+  align-items: flex-start;
 }
 
 /* Contact wrapper */
@@ -14,16 +15,17 @@
 /* Education */
 #education {
   display: grid;
-  background: white;
+  background: rgb(139, 255, 216);
   border-radius: 25px;
   padding: 25px;
-  width: fit-content;
+
+  /* width: fit-content; */
 }
 
 #education img {
   width: 100%;
-  height: auto;
-  max-width: 680px;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 900px) {
@@ -41,11 +43,10 @@
 .link{
   background-color: #FF5E61;
   color:white;
-  border-color: white;
-  border-width: 2px;
   border-radius: 30px;
   width: 300px;
   align-items: start;
+  padding: 2px;
 }
 div a{
   text-decoration: none;

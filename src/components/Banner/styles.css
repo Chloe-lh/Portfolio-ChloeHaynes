@@ -1,8 +1,8 @@
 .banner {
 /* filepath: c:\Users\Chloe\PersonalProjects\portfolio-ChloeHaynes\src\components\Banner\styles.css */
-  padding: 10px 0px; /* Top and bottom padding */
+  padding: 30px; /* Top and bottom padding */
   margin: 50px 50px;
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;      /* stack vertically */
   /* align-items: center;         center horizontally */

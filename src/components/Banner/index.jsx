@@ -11,7 +11,6 @@ export const Banner = () => {
                     and grow as a developer.</p>
                 {/* <h2>Check out my projects below!</h2> */}
                 <p className="hint">psst.. press n to change colors</p>
-                <h2>This part is under construction.. but check out my projects below!</h2>
                 {/* <a href="/Projects" className="btn">View Projects</a> */}
             </div>
         </section>
