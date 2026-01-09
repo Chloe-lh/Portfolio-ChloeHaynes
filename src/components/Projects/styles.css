@@ -48,7 +48,7 @@
 .project-card a{
     text-decoration: none;
     border: 3px solid rgba(9, 2, 2, 0.1);
-    background-color: aliceblue;
+    background-color: #FDFEFE;
     display: flex;
     justify-content: center;
     border-radius: 25px;

@@ -16,14 +16,14 @@ export default function Home({ projectRef }) {
       {/* <div className="links-container">
         <Links/>
       </div> */}
-      <div id="info-container"> 
-        <InfoSection/>
-      </div>
       <section className="projects-container" ref={projectRef}>
         <h1>Projects</h1>
         <p>Here are some of my projects. Click on the links to view the demos.</p>
         <Projects />
       </section>
+      <div id="info-container"> 
+        <InfoSection/>
+      </div>
     </>
   )
 }
