@@ -10,6 +10,9 @@ export default function Home({ projectRef }) {
       <div className="banner-container">
         <Banner />
       </div>
+      <div id="info-container"> 
+        <InfoSection/>
+      </div>
       {/* <div className="skills-container">
         <Skills />
       </div> */}
@@ -21,9 +24,6 @@ export default function Home({ projectRef }) {
         <p>Here are some of my projects. Click on the links to view the demos.</p>
         <Projects />
       </section>
-      <div id="info-container"> 
-        <InfoSection/>
-      </div>
     </>
   )
 }
