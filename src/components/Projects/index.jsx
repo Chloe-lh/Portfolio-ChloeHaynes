@@ -21,7 +21,7 @@ export default function Projects(){
             friends-only entries enforced across local and remote notes. Developed in a team of 6 using agile scrum practices.",
             "tools": ["Python", "Django","CSS","HTML"],
             "demo": "https://github.com/Chloe-lh/Social-Gold",
-            "background": "rgba(255, 100, 128, 1)"
+            "background": "rgba(255, 141, 162, 1)"
         },
         BaoBook: {
             "title": "BaoBook - Mood Tracking App",
@@ -59,7 +59,7 @@ export default function Projects(){
             "description": "Informative website to provide resources on the Digital Divide in Canada and educate on socio-economic gaps in digital literacy",
             "tools": ["HTML", "CSS", "JavaScript", "Bootstrap"],
             "demo": "https://chloe-lh.github.io/DigitalDivide/",
-            "background": "rgb(104, 248, 114)"
+            "background": "rgba(152, 252, 159, 1)"
         },
         suduko:{
             "title":"Suduko Solver",
@@ -70,7 +70,7 @@ export default function Projects(){
              and performance analysis in Python.",
             "tools": ["Python", "Matplotlib"],
             "demo": false,
-            "background": "rgb(252, 100, 255)"
+            "background": "rgba(251, 144, 253, 1)"
         },
     }
     return(
@@ -79,7 +79,7 @@ export default function Projects(){
                 <div 
                     className="project-card" 
                     key={key}
-                    style={{background: project.background || "#eee" }}
+                    style={{backgroundColor: "#FDFEFE"}}
                 >
                         <h2>{project.title}</h2>
                         <p className="description">{project.description}</p>
