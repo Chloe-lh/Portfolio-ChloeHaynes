@@ -8,6 +8,13 @@
     padding: 20px;
     color: white;
 }
+.title-demo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .projects{
     font-size: 0.9rem;
     display: flex;
@@ -37,21 +44,23 @@
     line-height: 1.5; /* Improved readability */
 }
 .skill-item{
-    font-family: 'Kanit', sans-serif;
+    font-family: sans-serif;
     border-radius: 25px;
-    padding: 5px 5px;
+    padding: 7px 7px;
     margin: 5px ;
     color: white;
-    background-color:rgb(245, 126, 15);
-    border: 2px solid rgb(242, 53, 148);
+    background-color:rgb(222, 116, 17);
+    box-shadow: inset 5px;
 }
 .project-card a{
+    align-self: center;
+    padding: 10px 15px;
     text-decoration: none;
-    border: 3px solid rgba(9, 2, 2, 0.1);
-    background-color: #49f4f4;
-    display: flex;
-    justify-content: center;
+    color: white;
+    background-color: #FF5E61;
     border-radius: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 

@@ -3,7 +3,7 @@
   max-width: 600px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #f3f4f665;
+  background-color: #a5a9b278;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', sans-serif;
@@ -22,21 +22,21 @@
   flex-direction: column;
   gap: 1.25rem;
 }
-
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: #4a4949;  /* Lighter color for placeholder */
+}
 .contact-container input,
 .contact-container textarea {
   padding: 0.9rem 1.2rem;
   border: 1px solid #0f0cbb4c;
-  background-color: #5d7dae15;
+  background-color: #5d7dae12;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#333;
   border-radius: 10px;
   font-size: 1rem;
   transition: border-color 0.2s ease;
-  font-family: inherit;
-}
-
-.contact-container textarea {
-  resize: vertical;
-  min-height: 150px;
+ 
 }
 
 .contact-container input:focus,
@@ -49,13 +49,14 @@
 .emailInput,
 .messageInput {
   width: 100%;
+  color: black;
 }
 
 .contact-container button {
   padding: 0.9rem 1.5rem;
   border: none;
   border-radius: 10px;
-  background-color: #814ac4;
+  background-color: #FF5E61;
   color: white;
   font-size: 1rem;
   cursor: pointer;

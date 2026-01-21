@@ -13,7 +13,7 @@ export default function Navbar({ projectRef }) {
                     <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li>
-                    <button onClick={scrollToProjects}>Projects</button>
+                    <button onClick={scrollToProjects} className="nav-link">Projects</button>
                 </li>
                 <li>
                     <Link to="/contact" className="nav-link">contact me</Link>

@@ -4,11 +4,13 @@ export default function Projects(){
     const projects = {
         gazprea:{
             "title":"Gazprea Compiler",
-            "description":"Fully functional compiler based on IBMs coding language Gazprea. Utilizes parsing and compiler \
-            research and technologies with ANTLR, LLVM, and MLIR. Our compiler works in 6 passes to parse code into an AST tree,\
-             attach semantic and scope information, constant folding, and finally MLIR code generation. Ability to handle complex coding \
-             logic such as arrays, structs, tuples, vectors etc. This project was completed in a group of 3 in Ronald Unarus Compiler Design \
-             course at the University of Alberta",
+            "description":"Fully functional compiler based on IBMs coding language Gazprea. This process required a full compiler\
+             pipeline built on lexical analysis and bottom-up parsing using ANTLR and MLIR. Gazprea is a language composed of complex \
+             data structures like arrays, vectors, structs, generators, tuples, and more, which required complete understanding of syntax, \
+             semantics, and storage. I personally managed our abstract syntax tree and data organization, constant folding to increase performance, \
+             and error checking in input. Our compiler works in 6 passes to parse code into an AST tree, attach semantic and scope information, constant folding,\
+              and finally MLIR code generation. This work required careful attention to correctness, performance, and validation. This project was completed \
+              in a group of 3 in Ronald Unarus Compiler Design course at the University of Alberta",
             "tools": ["ANTLR", "C++", "LLVM","MLIR","Clang"],
             "demo": false,
             "background": "rgba(100, 255, 252, 1)"
@@ -38,8 +40,8 @@ export default function Projects(){
         project3: {
             "title": "Tweety",
             "description": "Built a command-line application in Python using SQLite to manage enterprise tweet data. The system supports \
-             user authentication, tweet searches, replies, retweets, and favorites. Designed secure and optimized SQL queries with pagination \
-              and string matching. Collaborated in a team of four using GitHub for version control and project coordination.",
+             user authentication, tweet searches, replies, retweets, and favorites. Implemented a relational database model to efficiently organize tweets, users, and interactions. Designed secure and optimized SQL queries with pagination \
+            and string matching, protecting against SQL injection attacks through parameterized queries. Collaborated in a team of four using GitHub for version control and project coordination.",
             "tools": ["SQL", "Python"],
             "demo": false,
             "background": "rgb(236, 253, 87)"
@@ -76,22 +78,20 @@ export default function Projects(){
     return(
         <section className="projects">
             {Object.entries(projects).map(([key, project])=> (
-                <div 
-                    className="project-card" 
-                    key={key}
-                    style={{backgroundColor: "#FDFEFE"}}
-                >
-                        <h2>{project.title}</h2>
-                        <p className="description">{project.description}</p>
-                        {(project.skills || project.tools) && (
-                            <p className="skill" style={{fontWeight: 'bold'}}>Tools{" "}{(project.skills || project.tools).map((skill, index)=>(
-                                <span key={index} className="skill-item">{skill}</span>
-                            ))}</p>
-                        )}
-                        {project.demo!== false && (
-                            <a href={project.demo} target="_blank" rel="noopener noreferrer">View Demo</a>
-                        )}
+            <div className="project-card" key={key} style={{backgroundColor: "#FDFEFE"}}>
+                <div className="title-demo-container">
+                    <h2>{project.title}</h2>
+                    {project.demo !== false && (
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer">View Demo</a>
+                    )}
                 </div>
+                {(project.skills || project.tools) && (
+                    <p className="skill" style={{fontWeight: 'bold'}}>Tools{" "}{(project.skills || project.tools).map((skill, index)=>(
+                        <span key={index} className="skill-item">{skill}</span>
+                    ))}</p>
+                )}
+                <p className="description">{project.description}</p>
+            </div>
             ))}
         </section>
     )
