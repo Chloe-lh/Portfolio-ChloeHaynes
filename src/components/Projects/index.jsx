@@ -75,7 +75,7 @@ export default function Projects(){
             "background": "rgba(251, 144, 253, 1)"
         },
         psnotify:{
-            "title":"Distpnotify",
+            "title":"Distpsnotify",
             "description":"distpsnotify is a distributed systems utility that enables remote command execution and process monitoring across\
              multiple hosts. Built in C, it implements a client-server architecture where a central coordinator uses SSH to distribute shell\
               commands to remote agents running on multiple machines, then aggregates and reports the results. The project demonstrates proficiency \
