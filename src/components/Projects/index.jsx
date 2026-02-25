@@ -74,6 +74,18 @@ export default function Projects(){
             "demo": false,
             "background": "rgba(251, 144, 253, 1)"
         },
+        psnotify:{
+            "title":"Distpnotify",
+            "description":"distpsnotify is a distributed systems utility that enables remote command execution and process monitoring across\
+             multiple hosts. Built in C, it implements a client-server architecture where a central coordinator uses SSH to distribute shell\
+              commands to remote agents running on multiple machines, then aggregates and reports the results. The project demonstrates proficiency \
+              in systems programming, including socket-based network communication, SSH integration, process management, and POSIX systems programming. \
+              Key technical challenges include coordinating multi-host command execution, managing socket communication between distributed components,\
+             and handling process parsing and data aggregation across heterogeneous systems.",
+             "tools":["C", "SSH","POSIX","distributed processes"],
+             "demo": "https://github.com/Chloe-lh/distpsnotify",
+             "background":"rgba(0,0,0,0)"
+        }
     }
     return(
         <section className="projects">
@@ -82,7 +94,7 @@ export default function Projects(){
                 <div className="title-demo-container">
                     <h2>{project.title}</h2>
                     {project.demo !== false && (
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">View Demo</a>
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer">View</a>
                     )}
                 </div>
                 {(project.skills || project.tools) && (
